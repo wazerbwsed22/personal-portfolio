@@ -17,7 +17,7 @@ root.render(
     <BrowserRouter basename={window.location.pathname || ''}>
       <App/>
       <Routes>
-     <Route exact path="/" />
+     <Route exact path="/"/>
       </Routes>
 
     </BrowserRouter>
