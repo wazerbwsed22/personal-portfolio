@@ -9,6 +9,7 @@ import SaveGo from "../assets/img/plane.png";
 import Carousel from 'react-multi-carousel';
 import SpotifyClone from "../assets/img/spotifyIcon.png";
 import StonyHub from "../assets/img/StonyHub.png";
+import React from "react";  // Ensure React is imported
 
 
 export const Projects = () => {

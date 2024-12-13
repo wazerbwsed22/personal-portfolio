@@ -1,5 +1,6 @@
 import { Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import React from "react";  // Ensure React is imported
 
 export const ProjectCard = ({ title, description, imgUrl, extra, link}) => {
   const handleButtonClick = () => {

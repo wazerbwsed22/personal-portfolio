@@ -5,6 +5,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
 import Confetti from "./Confetti";
+import React from "react";  // Ensure React is imported
 
 export const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -33,11 +34,7 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-        //       setIsSubmitted(true);
-
-    
-  
-      emailjs.sendForm('service_emk0zld', 'template_6qk8leb', form.current, 'JYekA6RRO_NUM_RsN')
+      emailjs.sendForm('service_ayae51k', 'template_6qk8leb', form.current, 'JYekA6RRO_NUM_RsN')
         .then((result) => {
             console.log(result.text);
             console.log("message sent");
@@ -47,12 +44,7 @@ export const Contact = () => {
       e.target.reset();
       const confettiTimer = setTimeout(() => {
         setIsSubmitted(false);
-      }, 7000);
-            
-     
-
-      
-            
+      }, 7000);  
         }, (error) => {
           console.log("message NOT SENT");
 

@@ -13,6 +13,7 @@ import pythonIcon from "../assets/img/pythonIcon.png";
 import cIcon from "../assets/img/CIcon.png";
 import tailwindIcon from "../assets/img/TailwindIcon.png";
 import DartIcon from "../assets/img/Dart.png";
+import React from "react";  // Ensure React is imported
 
 
 
