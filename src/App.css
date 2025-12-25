@@ -21,7 +21,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -246,6 +245,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -256,14 +256,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner h1 {
-  font-size: 65px;
+.banner h7 {
+  font-size: 5rem;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  font-family: "Space Mono", monospace;
 }
+
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
@@ -312,6 +314,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 50px 0;
   position: relative;
 }
+
+.skill-table {
+  width: 100%;
+  border-spacing: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.skill-table td {
+  vertical-align: top;
+  text-align: center;
+}
+
+.skill-table img {
+  display: block;
+  margin: 0 auto;
+}
+
+.skill-table h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
 
 
 .skill-bx {

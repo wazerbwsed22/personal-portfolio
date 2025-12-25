@@ -24,6 +24,28 @@ export const Banner = () => {
     return () => { clearInterval(ticker) };
   }, [text])
 
+  useEffect(() => { //b/c it's in use effect it might have the issue of infinitely running 
+    let iterations = 0;
+    const heading = document.querySelector("h7");
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    if (heading) {
+      heading.onmouseover = (event) => {
+       const interval =  setInterval(() => {
+          event.target.innerText = event.target.innerText.split("")
+          .map(letters[Math.floor(Math.random() * 26)])
+          .join("");
+
+          if(iterations >= 9) clearInterval(interval);
+          iterations += 1;
+          console.log("YESYING");
+        }, 30);
+
+      
+      };
+    }
+  }, []); 
+
+
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
@@ -54,31 +76,17 @@ export const Banner = () => {
   }
   
 
-  return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`I'm a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Student", "Web Developer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Hello, my name is Utsha Paul. I'm currently a junior attending Stony Brook University, majoring in Computer Science. I'm an aspiring Software Engineer working to make a difference in the tech industry.</p>
-                  <button onClick={openPDF}>Resume <ArrowRightCircle size={45} /></button>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  )
+    return (
+      <section className="banner" id="home">
+        <Container>
+          <div className="portfolio-container">
+          <span className="tagline">Welcome to my Portfolio</span>
+            <h7>Hello, I'm Utsha.</h7>
+            <p>I graduated from Stony Brook University 2025 with a major in Computer Science - specialization in Artificial Intelligence and Data Science. Currently, I'm an <strong>Associate Software Engineer at RVO Health </strong> </p>
+            <button onClick={openPDF}>Resume <ArrowRightCircle size={45} /></button>
+        </div>
+        </Container>
+      </section>
+    )
+  
 }
