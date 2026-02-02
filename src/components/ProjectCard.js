@@ -13,7 +13,6 @@ export const ProjectCard = ({ title, description, imgUrl, extra, link}) => {
 
         <div className="proj-txtx">
         <button onClick={handleButtonClick}> <ArrowRightCircle size={45} /></button>
-
           <h4>{title}</h4>
           <h4>{description}</h4>
           <p>{extra}</p>
