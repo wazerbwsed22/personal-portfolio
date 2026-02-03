@@ -1,12 +1,9 @@
-import { Container, Row, Col, Tab, Nav, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 import payGreen from "../assets/img/Paygreen2.png";
 import SaveGo from "../assets/img/plane.png";
-import Carousel from 'react-multi-carousel';
 import SpotifyClone from "../assets/img/spotifyIcon.png";
 import StonyHub from "../assets/img/StonyHub.png";
 
@@ -116,7 +113,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="background"></img>
     </section>
   )
 }

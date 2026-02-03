@@ -1,10 +1,6 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 import reactIcon from "../assets/img/react.icon.png";
 import csharpIcon from "../assets/img/csharpIcon.png";
@@ -54,31 +50,31 @@ export const Skills = () => {
                         <h2>Skills</h2>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                       <div className="item">
-                                          <img src={javaIcon} alt="Image" style={{ width: '100px', height: 'auto' }}/>
+                                          <img src={javaIcon} alt="java" style={{ width: '100px', height: 'auto' }}/>
                                           <h5>Java</h5>
                                       </div>
                                       <div className="item">
-                                          <img src={csharpIcon} alt="Image" />
+                                          <img src={csharpIcon} alt="csharp" />
                                           <h5>C#</h5>
                                       </div>
                                       <div className="item">
-                                          <img src={reactIcon} alt="Image" />
+                                          <img src={reactIcon} alt="react" />
                                           <h5>React</h5>
                                       </div>
                                       <div className="item">
-                                          <img src={pythonIcon} alt="Image" style={{ width: '250px', height: 'auto',  marginTop: '20px' }}/>
+                                          <img src={pythonIcon} alt="python" style={{ width: '250px', height: 'auto',  marginTop: '20px' }}/>
                                           <h5>Python</h5>
                                       </div>
                                       <div className="item">
-                                          <img src={cIcon} alt="Image" style={{ width: '120px', height: 'auto',  marginTop: '30px' }}/>
+                                          <img src={cIcon} alt="c" style={{ width: '120px', height: 'auto',  marginTop: '30px' }}/>
                                           <h5>C Programming</h5>
                                       </div>
                                       <div className="item">
-                                          <img src={tailwindIcon} alt="Image" style={{ width: '130px', height: 'auto',  marginTop: '50px' }}/>
+                                          <img src={tailwindIcon} alt="tailwind" style={{ width: '130px', height: 'auto',  marginTop: '50px' }}/>
                                           <h5>Tailwind</h5>
                                       </div>
                                       <div className="item">
-                                          <img src={DartIcon} alt="Image" style={{ width: '130px', height: 'auto',  marginTop: '45px' }}/>
+                                          <img src={DartIcon} alt="dart" style={{ width: '130px', height: 'auto',  marginTop: '45px' }}/>
                                           <h5>Dart</h5>
                                       </div>
                                   </Carousel>

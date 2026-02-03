@@ -9,8 +9,7 @@ export const ProjectCard = ({ title, description, imgUrl, extra, link}) => {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
-        <img src={imgUrl} />
-
+        <img src={imgUrl} alt="titles" />
         <div className="proj-txtx">
         <button onClick={handleButtonClick}> <ArrowRightCircle size={45} /></button>
           <h4>{title}</h4>

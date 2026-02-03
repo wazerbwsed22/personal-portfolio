@@ -5,10 +5,6 @@ const Confetti = ( {show}) => {
     const [windowDimension, setDimension] = useState({width: window.innerWidth, height: window.innerHeight});
     const [showConfetti, setShowConfetti] = useState(false);
 
-    const detectSize = () => {
-        setDimension({width :window.innerWidth, height: window.innerHeight});
-    }
-
     useEffect(() =>{
         setShowConfetti(true);
         const confettiTimer = setTimeout(() => {
@@ -16,7 +12,6 @@ const Confetti = ( {show}) => {
           }, 7000);
       
         return () => {
-          //  window.removeEventListener('resize', detectSize);
             clearTimeout(confettiTimer);
 
         };

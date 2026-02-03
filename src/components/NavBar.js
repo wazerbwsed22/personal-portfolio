@@ -1,8 +1,6 @@
-import { Navbar, Container, NavDropdown, Nav} from "react-bootstrap";
+import { Navbar, Container, Nav} from "react-bootstrap";
 import { useState, useEffect } from "react";
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
 import '../App.css';
 
 export const NavBar = () => {
