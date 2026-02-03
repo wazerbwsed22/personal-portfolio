@@ -4,7 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import resume from "../assets/resume/SWEResume2023.pdf";
+import resume from "../assets/resume/Utsha-Paul-Resume-2025.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -63,7 +63,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`I'm a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Student", "Web Developer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Hello, my name is Utsha Paul. I'm currently a junior attending Stony Brook University, majoring in Computer Science. I'm an aspiring Software Engineer working to make a difference in the tech industry.</p>
+                  <p>Hello, my name is Utsha Paul. I'm currently a Software Engineer at RVO Health. I fix bugs and enhance the performance of Healthgrades - a leading online platform for information about physicians and hospitals. </p>
                   <button onClick={openPDF}>Resume <ArrowRightCircle size={45} /></button>
               </div>}
             </TrackVisibility>

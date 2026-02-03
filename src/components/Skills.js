@@ -7,7 +7,7 @@ import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 import reactIcon from "../assets/img/react.icon.png";
-import nodeIcon from "../assets/img/node.icon.png";
+import csharpIcon from "../assets/img/csharpIcon.png";
 import javaIcon from "../assets/img/javaIcon.png";
 import pythonIcon from "../assets/img/pythonIcon.png";
 import cIcon from "../assets/img/CIcon.png";
@@ -58,8 +58,8 @@ export const Skills = () => {
                                           <h5>Java</h5>
                                       </div>
                                       <div className="item">
-                                          <img src={nodeIcon} alt="Image" />
-                                          <h5>Node</h5>
+                                          <img src={csharpIcon} alt="Image" />
+                                          <h5>C#</h5>
                                       </div>
                                       <div className="item">
                                           <img src={reactIcon} alt="Image" />
