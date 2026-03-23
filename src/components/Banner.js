@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/linkedinpp.jpeg";
+import linkedinpp from "../assets/img/linkedinpp.jpeg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,40 +12,10 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = [ "Student", "Software Engineer", "Web Developer" ];
   const period = 2000;
 
 
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(500);
-    } 
-  }
-
-
-    useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text, delta, tick])
 
 
   function openPDF(){
@@ -61,8 +32,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`I'm a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Student", "Web Developer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Hello, my name is Utsha Paul. I'm currently a Software Engineer at RVO Health. I fix bugs and enhance the performance of Healthgrades - a leading online platform for information about physicians and hospitals. </p>
+                  <h2>Hello! I'm a Software Engineer at RVO Health working on Healthgrades. I resolve issues and enhance the performance of Healthgrades - a high-traffic healthcare platform. </h2>
                   <button onClick={openPDF}>Resume <ArrowRightCircle size={45} /></button>
               </div>}
             </TrackVisibility>
@@ -71,7 +41,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <div class="banner-header-img">
+                  <img src={linkedinpp} alt="Header Img" class="rounded"/>
+
+                  </div>
                 </div>}
             </TrackVisibility>
           </Col>

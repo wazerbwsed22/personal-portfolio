@@ -17,9 +17,8 @@ export const Contact = () => {
     firstName: '',
     email: '',
     message: ''
-  }
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-
+  };
+  
   const handleSubmit = (e) => {
     e.preventDefault();
         //       setIsSubmitted(true);

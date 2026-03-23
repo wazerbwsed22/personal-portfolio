@@ -8,7 +8,7 @@ import SpotifyClone from "../assets/img/spotifyIcon.png";
 import StonyHub from "../assets/img/StonyHub.png";
 
 
-export const Projects = () => {
+export const Hackathons = () => {
 
     // const handleButtonClick = (PayGreen) => {
     //   console.log(`Button clicked for project: ${PayGreen}`);
@@ -16,30 +16,45 @@ export const Projects = () => {
     // };
 
 
-  const projects = [
+  const hackathons = [
     {
-      title: "Spotify Clone [2023]",
-      description: "A functional clone of Spotify using Tailwind, PostgreSQL, React",
-      imgUrl: SpotifyClone,
-      extra: "[Code will be uploaded soon]"
-    }
+      title: "PayGreen [2023]",
+      description: "An app to manage finances and provide sustainable choices",
+      imgUrl: payGreen,
+      extra: "Best design winner @TechTogether New York 2023 hackathon",
+      link : 'https://devpost.com/software/pay-green',
+      
+   
+    },
+    {
+      title: "Save & Go [2023]",
+      description: "An app to simplify the travel experience with affordable flights and hotel accommodations.",
+      imgUrl: SaveGo,
+      extra: "",
+      link: 'https://devpost.com/software/save-go',
+    },
+    {
+      title: "StonyHub [2022]",
+      description: "Inspired by GrubHub, this app allows food browsing for students to eat on or off campus",
+      imgUrl: StonyHub,
+      extra: "",
+      link: 'https://devpost.com/software/stonyhub',
+    },
   ];
 
   return (
-    <section className="project" id="projects">
+    <section className="hackathons" id="hackathons">
       <Container>
         <Row>
           <Col size={12}>
-          <h2 style={{ marginBottom: '60px' }}>Projects</h2>
-
-
+          <h2 style={{ marginBottom: '60px' }}>Hackathons</h2>
           <Row className="row">
               {
-                projects.map((project, index) => {
+                hackathons.map((hackathon, index) => {
                   return (
                     <ProjectCard
                       key={index}
-                      {...project}
+                      {...hackathon}
                       />
                   )
                 })
