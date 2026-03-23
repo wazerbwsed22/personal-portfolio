@@ -6,6 +6,7 @@ import payGreen from "../assets/img/Paygreen2.png";
 import SaveGo from "../assets/img/plane.png";
 import SpotifyClone from "../assets/img/spotifyIcon.png";
 import StonyHub from "../assets/img/StonyHub.png";
+import recallMe from "../assets/img/recallMe.jpg";
 
 
 export const Hackathons = () => {
@@ -39,6 +40,13 @@ export const Hackathons = () => {
       imgUrl: StonyHub,
       extra: "",
       link: 'https://devpost.com/software/stonyhub',
+    },
+        {
+      title: "RecallMe [2024]",
+      description: "Application that helps dementia patients remember their loved ones",
+      imgUrl: recallMe,
+      extra: "",
+      link: 'https://devpost.com/software/recallme-t5hxuz',
     },
   ];
 
