@@ -315,48 +315,118 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
+/************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 80px 0;
   position: relative;
+  background: radial-gradient(circle at 10% 60%, #28172c 0%, #020b21 40%, circle at 10% 60% #05153a 100%);
 }
-
 
 .skill-bx {
-  background: linear-gradient(90.21deg, rgb(50, 26, 43) -5.81%, #150d36 111.58%);
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -20px;
+  background: transparent;
+  border-radius: 28px;
+  padding: 8px 0 0;
+  margin-top: 0;
 }
-.skill-background{
-  background-color: red;
-}
+
 .skill h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f3f7ff;
 }
-.skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+
+.skill-card {
+  background: linear-gradient(180deg, rgba(8, 24, 56, 0.95) 0%, rgba(3, 14, 38, 0.95) 100%);
+  border: 1px solid rgba(142, 177, 255, 0.16);
+  border-radius: 20px;
+  padding: 24px;
+  min-height: 220px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(142, 177, 255, 0.35);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
 }
-.background-image-left {  
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.skill-card-header h3 {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+  color: #f3f7ff;
+}
+
+.skill-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #66a3ff;
+  background: rgba(22, 76, 168, 0.22);
+  border: 1px solid rgba(124, 170, 255, 0.24);
+  flex-shrink: 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #e8f1ff;
+  border: 1px solid rgba(141, 178, 255, 0.28);
+  background: rgba(7, 25, 61, 0.72);
+  border-radius: 999px;
+  padding: 8px 14px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .skill {
+    padding: 64px 0;
+  }
+
+  .skill h2 {
+    font-size: 36px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    min-height: auto;
+  }
 }
 
 
@@ -364,12 +434,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project, .hackathon {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background: radial-gradient(circle at 10% 60%, #28172c 0%, #020b21 40%, circle at 10% 60% #05153a 100%);
 }
 .projects, .hackathons {
   padding: 80px 0;
   position: relative;
-  background: black
+  background: radial-gradient(circle at 10% 60%, #28172c 0%, #020b21 40%, circle at 10% 60% #05153a 100%);
 }
 
 .project h2, .hackathons h2 {
