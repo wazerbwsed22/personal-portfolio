@@ -4,32 +4,32 @@ const skillGroups = [
   {
     title: "Programming Languages",
     Icon: Terminal,
-    skills: ["JavaScript", "Java", "Python", "TypeScript", "HTML/CSS"],
+    skills: ["Dart", "Java", "Python", "TypeScript", "C", "C#", "GraphQL", "JavaScript"],
   },
   {
     title: "Frontend Development",
     Icon: LayoutTextWindow,
-    skills: ["React", "React Native", "Next.js", "Tailwind CSS", "Flutter"],
+    skills: ["React Native", "Flutter"],
   },
   {
     title: "Backend Development",
     Icon: CodeSlash,
-    skills: ["Node.js", "Express.js", "NestJS", "Spring Boot", "REST APIs"],
+    skills: ["Node.js", "Express.js", ".NET", "REST APIs"],
   },
   {
     title: "Databases",
     Icon: Database,
-    skills: ["MongoDB", "MySQL", "Firebase", "PostgreSQL", "Redis"],
+    skills: ["MongoDB", "SQL"],
   },
   {
     title: "Tools & Technologies",
     Icon: Cpu,
-    skills: ["Git", "Vercel", "Agile/Scrum"],
+    skills: ["AWS", "Monarch", "Docker", "Launchdarkly"],
   },
   {
     title: "Design",
     Icon: Palette,
-    skills: ["Figma", "Adobe AI", "UI/UX Design", "Wireframing", "Prototyping"],
+    skills: ["Figma"],
   },
 ];
 
