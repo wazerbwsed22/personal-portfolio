@@ -1,6 +1,4 @@
-import { useState, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/linkedinpp.jpeg";
 import linkedinpp from "../assets/img/linkedinpp.jpeg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
@@ -8,20 +6,9 @@ import TrackVisibility from 'react-on-screen';
 import resume from "../assets/resume/Utsha-Paul-Resume-2025.pdf";
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000;
-
-
-
-
-
   function openPDF(){
     window.open(resume);
   }
-  
 
   return (
     <section className="banner" id="home">

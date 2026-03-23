@@ -10,21 +10,9 @@ export const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const form = useRef();
-
-
-
-  const formInitialDetails = {
-    firstName: '',
-    email: '',
-    message: ''
-  };
   
   const handleSubmit = (e) => {
     e.preventDefault();
-        //       setIsSubmitted(true);
-
-    
-  
       emailjs.sendForm('service_emk0zld', 'template_6qk8leb', form.current, 'JYekA6RRO_NUM_RsN')
         .then((result) => {
             console.log(result.text);
@@ -40,8 +28,7 @@ export const Contact = () => {
         });
        
     };
-    
-
+  
 
   return (
     <section className="contact" id="connect">

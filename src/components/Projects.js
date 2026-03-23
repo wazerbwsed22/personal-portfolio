@@ -2,10 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
-import payGreen from "../assets/img/Paygreen2.png";
-import SaveGo from "../assets/img/plane.png";
 import SpotifyClone from "../assets/img/spotifyIcon.png";
-import StonyHub from "../assets/img/StonyHub.png";
 
 
 export const Projects = () => {

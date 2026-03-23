@@ -15,9 +15,6 @@ const Confetti = ( {show}) => {
 
         };
     }, [show]);
-   
- 
-    
 
     return (
         <>

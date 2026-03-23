@@ -24,7 +24,7 @@ const skillGroups = [
   {
     title: "Tools & Technologies",
     Icon: Cpu,
-    skills: ["AWS", "Monarch", "Docker", "Launchdarkly"],
+    skills: ["AWS", "Monarch", "Docker", "Launchdarkly", "Datadog"],
   },
   {
     title: "Design",

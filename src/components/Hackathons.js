@@ -4,19 +4,11 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import payGreen from "../assets/img/Paygreen2.png";
 import SaveGo from "../assets/img/plane.png";
-import SpotifyClone from "../assets/img/spotifyIcon.png";
 import StonyHub from "../assets/img/StonyHub.png";
 import recallMe from "../assets/img/recallMe.jpg";
 
 
 export const Hackathons = () => {
-
-    // const handleButtonClick = (PayGreen) => {
-    //   console.log(`Button clicked for project: ${PayGreen}`);
-    //   // Add your desired logic here
-    // };
-
-
   const hackathons = [
     {
       title: "PayGreen [2023]",
