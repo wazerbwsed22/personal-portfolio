@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
-import SpotifyClone from "../assets/img/spotifyIcon.png";
+import medicalreport from "../assets/img/medicalreport.jpeg";
 
 
 export const Projects = () => {
@@ -15,10 +15,11 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Spotify Clone [2023]",
-      description: "A functional clone of Spotify using Tailwind, PostgreSQL, React",
-      imgUrl: SpotifyClone,
-      extra: "[Code will be uploaded soon]"
+      title: "SimpleRead Medical",
+      description: "An AI-powered medical report summarization tool with a Chat interface to simplify complex medical information",
+      imgUrl: medicalreport,
+      link : 'https://drive.google.com/file/d/1QUZJarXLxocoKgG3Qbj1MfCplbxeeTqp/view',
+
     }
   ];
 

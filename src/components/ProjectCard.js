@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 
-export const ProjectCard = ({ title, description, imgUrl, extra, link}) => {
+export const ProjectCard = ({ title, description, imgUrl, extra, link, winnerTag }) => {
   const handleButtonClick = () => {
     window.location.href = link;
   };
@@ -9,6 +9,7 @@ export const ProjectCard = ({ title, description, imgUrl, extra, link}) => {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
+        {winnerTag && <span className="winner-tag">{winnerTag}</span>}
         <img src={imgUrl} alt="titles" />
         <div className="proj-txtx">
         <button onClick={handleButtonClick}> <ArrowRightCircle size={45} /></button>

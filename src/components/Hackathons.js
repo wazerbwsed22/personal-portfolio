@@ -15,6 +15,7 @@ export const Hackathons = () => {
       description: "An app to manage finances and provide sustainable choices",
       imgUrl: payGreen,
       extra: "Best design winner @TechTogether New York 2023 hackathon",
+      winnerTag: "Winner",
       link : 'https://devpost.com/software/pay-green',
       
    
@@ -24,6 +25,7 @@ export const Hackathons = () => {
       description: "An app to simplify the travel experience with affordable flights and hotel accommodations.",
       imgUrl: SaveGo,
       extra: "",
+      winnerTag: "",
       link: 'https://devpost.com/software/save-go',
     },
     {
@@ -31,13 +33,15 @@ export const Hackathons = () => {
       description: "Inspired by GrubHub, this app allows food browsing for students to eat on or off campus",
       imgUrl: StonyHub,
       extra: "",
+      winnerTag: "",
       link: 'https://devpost.com/software/stonyhub',
     },
         {
       title: "RecallMe [2024]",
       description: "Application that helps dementia patients remember their loved ones",
       imgUrl: recallMe,
-      extra: "",
+      extra: "Best Accessibility Hack winner @HopperHacks X 2024",
+      winnerTag: "Winner",
       link: 'https://devpost.com/software/recallme-t5hxuz',
     },
   ];
