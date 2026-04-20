@@ -3,7 +3,7 @@ import linkedinpp from "../assets/img/linkedinpp.jpeg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import resume from "../assets/resume/Utsha_Paul_Resume_2026_pdf.pdf";
+import resume from "../assets/resume/Utsha_Paul_Resume_2026.pdf";
 
 export const Banner = () => {
   function openPDF(){
